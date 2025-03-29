@@ -9,6 +9,8 @@ plugins {
 dependencies{
     implementation(platform("com.google.firebase:firebase-bom:33.10.0"))
     implementation("com.google.firebase:firebase-analytics")
+    implementation("androidx.multidex:multidex:2.0.1") 
+
 }
 android {
     namespace = "com.example.flutter_application_122"
@@ -30,6 +32,7 @@ android {
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
         minSdk = 23
+        multiDexEnabled = true
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
         versionName = flutter.versionName

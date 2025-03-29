@@ -23,3 +23,4 @@ plugins {
 }
 
 include(":app")
+include (":agora_rtc_engine")
